@@ -26,10 +26,10 @@
 <li>GFM：2017年，GitHub发布了基于CommonMark的GitHub Flavored Markdown（GFM）的正式规范。</li>
 <li>Markdown Extra：Markdown Extra是一种轻量级标记语言，基于在PHP（最初）、Python和Ruby中实现的Markdown。</li>
 </ul>
-<p>GitHub结合了标准的MarkDown语法，加入Github风格的特性，称为GitHub Flavored MarkDown，具有一些独特的写作功能。</p>
-<h3 id="1-4-Github的Markdown"><a href="#1-4-Github的Markdown" class="headerlink" title="1.4 Github的Markdown"></a>1.4 Github的Markdown</h3><p>Github基于CommMark（标准Markdown）进行扩展，形成带有Github风格的Markdown语法，称为Github Flavored Markdown（GFM）。</p>
+<h3 id="1-4-Github的Markdown"><a href="#1-4-Github的Markdown" class="headerlink" title="1.4 Github的Markdown"></a>1.4 Github的Markdown</h3><p>GitHub结合了标准的MarkDown语法，加入Github风格的特性，称为GitHub Flavored MarkDown，具有一些独特的写作功能。</p>
+<p>Github基于CommMark（标准Markdown）进行扩展，形成带有Github风格的Markdown语法，称为Github Flavored Markdown（GFM）。</p>
 <p>除了表格、删除线、自动链接和任务列表被Github规范作为扩展添加外，GFM遵循CommonMark规范。GitHub还相应地更改了其站点上使用的解析器，这要求更改某些文档 - 例如，GFM现在要求创建标题的哈希符号由空格字符分隔。</p>
-<h2 id="二、语法"><a href="#二、语法" class="headerlink" title="二、语法"></a>二、语法</h2><p>2.1 CommonMark<br><img src="https://../public/images/CommonMark.png" alt="Image"></p>
+<h2 id="二、语法"><a href="#二、语法" class="headerlink" title="二、语法"></a>二、语法</h2><p>2.1 CommonMark<br><img src="https://../public/images/commonmark.png" alt="Image"></p>
 <p>2.2 GFM</p>
 <h2 id="三、参考链接"><a href="#三、参考链接" class="headerlink" title="三、参考链接"></a>三、参考链接</h2><p><a href="https://commonmark.org/">CommonMark</a></p>
 <p><a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin">Markdown百科</a>  </p>
