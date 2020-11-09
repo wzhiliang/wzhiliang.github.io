@@ -124,17 +124,17 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">1</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">2</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">3</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">4</span></a>
 
   </li>
       <li class="menu-item menu-item-search">
@@ -194,6 +194,112 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wzhiliang.github.io/2020/11/09/github-markdown/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/my-pictrue.jpg">
+      <meta itemprop="name" content="汪志良">
+      <meta itemprop="description" content="不卑不亢不慌不忙，去寻找我想要的自由">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="汪志良の博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/11/09/github-markdown/" class="post-title-link" itemprop="url">基于Github的Markdown语法简明汇总</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-11-09 21:11:43 / 修改时间：23:32:54" itemprop="dateCreated datePublished" datetime="2020-11-09T21:11:43+08:00">2020-11-09</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Markdown/" itemprop="url" rel="index"><span itemprop="name">Markdown</span></a>
+                </span>
+            </span>
+
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>1.2k</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><h3 id="1-1-研究目的"><a href="#1-1-研究目的" class="headerlink" title="1.1 研究目的"></a>1.1 研究目的</h3><p>充分利用Markdown的特性创作出结构清晰、逻辑性强的技术博文，一来可以作为个人笔记以便不时之需，二来加强对Markdown的深入理解。</p>
+<h3 id="1-2-Github"><a href="#1-2-Github" class="headerlink" title="1.2 Github"></a>1.2 Github</h3><p>Github作为全球最具影响力的程序员社区，汇集了全球顶尖程序员，孵化出种类繁多的程序、项目、产品。你可以在上面研究、学习各种源码，你可以创建自己的项目和博客。</p>
+<p>Github中项目的说明文档、更新文档、Issue、Comment等模块都支持MarkDown，所以作为Github社区里的一员，有必要深入学习下MarkDown文本标记语言。</p>
+<h3 id="1-3-Markdown"><a href="#1-3-Markdown" class="headerlink" title="1.3 Markdown"></a>1.3 Markdown</h3><p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML/HTML文档。</p>
+<p>MarkDown特性</p>
+<ul>
+<li>轻量级</li>
+<li>易读易写</li>
+<li>支持图片、图表、数学式等</li>
+</ul>
+<p>基于以上特性，现在很多主流的网站都广泛的使用Markdown来撰写版主文档等。</p>
+<p>发展历程</p>
+<ul>
+<li>标准化：2016年3月发布了RFC 7763和RFC 7764。RFC 7763 从原始变体引入了MIME类型 text/markdown。RFC 7764讨论并注册了MultiMarkdown、GitHub Flavored Markdown (GFM)、Pandoc、CommonMark及Markdown等变体。</li>
+<li>CommonMark：CommonMark发布了规范、参考实现和测试包的几个版本，并计划在2018年宣布最终的1.0规范和测试包。</li>
+<li>GFM：2017年，GitHub发布了基于CommonMark的GitHub Flavored Markdown（GFM）的正式规范。</li>
+<li>Markdown Extra：Markdown Extra是一种轻量级标记语言，基于在PHP（最初）、Python和Ruby中实现的Markdown。</li>
+</ul>
+<p>GitHub结合了标准的MarkDown语法，加入Github风格的特性，称为GitHub Flavored MarkDown，具有一些独特的写作功能。</p>
+<h3 id="1-4-Github的Markdown"><a href="#1-4-Github的Markdown" class="headerlink" title="1.4 Github的Markdown"></a>1.4 Github的Markdown</h3><p>Github基于CommMark（标准Markdown）进行扩展，形成带有Github风格的Markdown语法，称为Github Flavored Markdown（GFM）。</p>
+<p>除了表格、删除线、自动链接和任务列表被Github规范作为扩展添加外，GFM遵循CommonMark规范。GitHub还相应地更改了其站点上使用的解析器，这要求更改某些文档 - 例如，GFM现在要求创建标题的哈希符号由空格字符分隔。</p>
+<h2 id="二、语法"><a href="#二、语法" class="headerlink" title="二、语法"></a>二、语法</h2><p>2.1 CommonMark<br><img src="https://../public/images/CommonMark.png" alt="Image"></p>
+<p>2.2 GFM</p>
+<h2 id="三、参考链接"><a href="#三、参考链接" class="headerlink" title="三、参考链接"></a>三、参考链接</h2><p><a target="_blank" rel="noopener" href="https://commonmark.org/">CommonMark</a></p>
+<p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin">Markdown百科</a>  </p>
+<p><a target="_blank" rel="noopener" href="https://docs.github.com/cn/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax">GitHub官方MarkDown语法链接</a>  </p>
+<p><a target="_blank" rel="noopener" href="https://github.github.com/gfm/">GFM</a>  </p>
+<p><a target="_blank" rel="noopener" href="https://daringfireball.net/projects/markdown/syntax#backslash">Daring Fireball</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <div>
+      
+    </div>
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="https://wzhiliang.github.io/2020/11/08/hexo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -217,17 +323,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-11-08 23:14:04 / 修改时间：23:16:56" itemprop="dateCreated datePublished" datetime="2020-11-08T23:14:04+08:00">2020-11-08</time>
+              <time title="创建时间：2020-11-08 23:14:04" itemprop="dateCreated datePublished" datetime="2020-11-08T23:14:04+08:00">2020-11-08</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-09 21:08:05" itemprop="dateModified" datetime="2020-11-09T21:08:05+08:00">2020-11-09</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%BB%BA%E7%AB%99/" itemprop="url" rel="index"><span itemprop="name">建站</span></a>
+                  <a href="/categories/%E5%BC%80%E6%BA%90-%E5%BB%BA%E7%AB%99/" itemprop="url" rel="index"><span itemprop="name">开源 建站</span></a>
                 </span>
             </span>
 
@@ -237,7 +349,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>25</span>
+              <span>12</span>
             </span>
 
         </div>
@@ -249,7 +361,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h3 id="如何使用hexo-next搭建github个人博客"><a href="#如何使用hexo-next搭建github个人博客" class="headerlink" title="如何使用hexo+next搭建github个人博客"></a>如何使用hexo+next搭建github个人博客</h3>
+          <h3 id="搭建github个人博客"><a href="#搭建github个人博客" class="headerlink" title="搭建github个人博客"></a>搭建github个人博客</h3>
       
     </div>
 
@@ -485,18 +597,18 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-count">2</span>
         <span class="site-state-item-name">分类</span>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -540,7 +652,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">0k</span>
+    <span title="站点总字数">2k</span>
 </div>
 
         
