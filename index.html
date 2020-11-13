@@ -219,7 +219,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-11-13 22:17:34 / 修改时间：22:32:11" itemprop="dateCreated datePublished" datetime="2020-11-13T22:17:34+08:00">2020-11-13</time>
+              <time title="创建时间：2020-11-13 22:17:34 / 修改时间：23:45:28" itemprop="dateCreated datePublished" datetime="2020-11-13T22:17:34+08:00">2020-11-13</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -237,7 +237,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>515</span>
+              <span>1.3k</span>
             </span>
 
         </div>
@@ -268,6 +268,32 @@
 <blockquote>
 <p>这些代码仓可以学习下思想，分析下优劣，实际项目中不一定要使用</p>
 </blockquote>
+<h2 id="第2章-数据存取"><a href="#第2章-数据存取" class="headerlink" title="第2章  数据存取"></a>第2章  数据存取</h2><blockquote>
+<p>在JavaScript中，数据存储的位置会对代码整体性能产生重大的影响。数据存储共有4种方式：字面量、变量、数组项、对象成员。它们有着各自的性能特点。</p>
+</blockquote>
+<ul>
+<li>访问字面量和局部变量的速度最快，相反，访问数组元素和对象成员相对较慢。</li>
+<li>由于局部变量存在于作用域的起始位置，因此访问局部变量比访问跨作用域变量更快。变量在作用域链中的位置越深，访问所需时间就越长。由于全局变量总处在作用域链的最末端，因此访问速度也是最慢的。</li>
+<li>避免使用with语句，因为它会改变执行环境作用域链。同样，try-catch语句中的catch子句也有同样的影响，因此也要小心使用。</li>
+<li>嵌套的对象成员会明显影响性能，尽量少用。</li>
+<li>属性或方法在原型链中的位置越深，访问它的速度也越慢。</li>
+<li>通常来说，你可以通过把常用的对象成员、数组元素、跨域变量保存在局部变量中来改善JavaScript性能，因为局部变量访问速度最快。</li>
+</ul>
+<blockquote>
+<p>通过以上策略，你可以显著提升那些需要使用大量JavaScript的Web应用的实际性能。</p>
+</blockquote>
+<h2 id="第3章-DOM编程"><a href="#第3章-DOM编程" class="headerlink" title="第3章  DOM编程"></a>第3章  DOM编程</h2><blockquote>
+<p>访问和操作DOM是现代Web应用的重要部分。但每次穿越链接ECMAScript和DOM连个岛屿之间的桥梁，都会被收取“过桥费”。为了减少DOM编程带来的性能损失，请记住以下几点：</p>
+</blockquote>
+<ul>
+<li>最小化DOM访问次数，尽可能在JavaScript端处理。</li>
+<li>如果需要多次访问某个DOM节点，请使用局部变量存储它的引用。</li>
+<li>小心处理HTML集合，因为它是实时连系着底层文档。把集合的长度缓存到一个变量中，并在迭代中使用它。如果需要经常操作集合，建议把它拷贝到一个数组中。</li>
+<li>如果可能的话，使用速度更快的API，比如querySelectorAll()和firstElementChild。</li>
+<li>要留意重排和重绘：批量修改样式时，“离线”操作DOM树，使用缓存，并减少访问布局信息的次数。</li>
+<li>动画中使用绝对定位，使用拖放代理。</li>
+<li>使用事件委托来减少事件处理器的数量。</li>
+</ul>
 
       
     </div>
@@ -775,7 +801,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">2k</span>
+    <span title="站点总字数">3k</span>
 </div>
 
         
