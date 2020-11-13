@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello Hexo</title>
-    <url>/2020/11/07/Hello-Hexo/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>基于Github的Markdown语法简明汇总</title>
     <url>/2020/11/09/github-markdown/</url>
     <content><![CDATA[<h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><h3 id="1-1-研究目的"><a href="#1-1-研究目的" class="headerlink" title="1.1 研究目的"></a>1.1 研究目的</h3><p>充分利用Markdown的特性创作出结构清晰、逻辑性强的技术博文，一来可以作为个人笔记以便不时之需，二来可以加强对Markdown的深入理解。</p>
 <h3 id="1-2-Github"><a href="#1-2-Github" class="headerlink" title="1.2 Github"></a>1.2 Github</h3><p>Github作为全球最具影响力的程序员社区，汇集了全球顶尖程序员，孵化出种类繁多的程序、项目、产品。你可以在上面研究、学习各种源码，你可以创建自己的项目和博客。</p>
 <p>Github中项目的说明文档、更新文档、Issue、Comment等模块都支持MarkDown，所以作为Github社区里的一员，有必要深入学习下MarkDown文本标记语言。</p>
-<h3 id="1-3-Markdown"><a href="#1-3-Markdown" class="headerlink" title="1.3 Markdown"></a>1.3 Markdown</h3><p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML/HTML文档。</p>
+<h3 id="1-3-Markdown"><a href="#1-3-Markdown" class="headerlink" title="1.3 Markdown"></a>1.3 Markdown</h3><p>Markdown是一种轻量级标记语言，创始人为约翰·格鲁伯（英语：John Gruber）。允许人们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML/HTML文档。  </p>
+<p>Markdown格式化语法的首要设计目标是使其尽可能地可读。这个想法是，Markdown格式的文档应该以纯文本形式原样发布，而不会看起来像被标签或格式说明所标记。</p>
 <p>MarkDown特性</p>
 <ul>
 <li>轻量级</li>
@@ -27,10 +23,30 @@
 <li>Markdown Extra：Markdown Extra是一种轻量级标记语言，基于在PHP（最初）、Python和Ruby中实现的Markdown。</li>
 </ul>
 <h3 id="1-4-Github的Markdown"><a href="#1-4-Github的Markdown" class="headerlink" title="1.4 Github的Markdown"></a>1.4 Github的Markdown</h3><p>GitHub结合了标准的MarkDown语法，加入Github风格的特性，称为GitHub Flavored MarkDown，具有一些独特的写作功能。</p>
-<p>Github基于CommMark（标准Markdown）进行扩展，形成带有Github风格的Markdown语法，称为Github Flavored Markdown，简称GFM。</p>
-<p>除了表格、删除线、自动链接和任务列表被Github规范作为扩展添加外，GFM遵循CommonMark规范。GitHub还相应地更改了其站点上使用的解析器，这要求更改某些文档 - 例如，GFM现在要求创建标题的哈希符号由空格字符分隔。</p>
-<h2 id="二、语法"><a href="#二、语法" class="headerlink" title="二、语法"></a>二、语法</h2><h3 id="2-1-CommonMark"><a href="#2-1-CommonMark" class="headerlink" title="2.1 CommonMark"></a>2.1 CommonMark</h3><p><img src="https://wzhiliang.github.io/images/commonmark.png" alt="Image"></p>
-<h3 id="2-2-GFM"><a href="#2-2-GFM" class="headerlink" title="2.2 GFM"></a>2.2 GFM</h3><h2 id="三、参考链接"><a href="#三、参考链接" class="headerlink" title="三、参考链接"></a>三、参考链接</h2><p><a href="https://commonmark.org/">CommonMark</a></p>
+<p>Github基于CommonMark Spec，是CommonMark的严格超集，形成带有Github风格的Markdown语法，称为Github Flavored Markdown，简称GFM。</p>
+<p>除了表格、删除线、自动链接和任务列表被Github规范作为扩展添加外，GFM遵循CommonMark规范。GitHub还相应地更改了其站点上使用的解析器，这要求更改某些文档 - 例如，GFM现在要求创建标题的哈希符号由空格字符分隔。  </p>
+<p>尽管GFM支持各种输入，但值得注意的是，在GFM转换为HTML之后，GitHub.com和GitHub Enterprise会执行其他后处理和清理操作，以确保网站的安全性和一致性。</p>
+<h2 id="二、语法"><a href="#二、语法" class="headerlink" title="二、语法"></a>二、语法</h2><h3 id="2-1-CommonMark"><a href="#2-1-CommonMark" class="headerlink" title="2.1 CommonMark"></a>2.1 CommonMark</h3><p><img src="https://wzhiliang.github.io/images/commonmark.png" alt="CommonMark"></p>
+<h3 id="2-2-GFM"><a href="#2-2-GFM" class="headerlink" title="2.2 GFM"></a>2.2 GFM</h3><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>sample</th>
+<th>to Get</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>标题</td>
+<td>## 标题</td>
+<td><h2>标题</h2></td>
+</tr>
+<tr>
+<td>文本</td>
+<td>文本</td>
+<td>文本</td>
+</tr>
+</tbody></table>
+<h2 id="三、参考链接"><a href="#三、参考链接" class="headerlink" title="三、参考链接"></a>三、参考链接</h2><p><a href="https://commonmark.org/">CommonMark</a></p>
 <p><a href="https://baike.baidu.com/item/markdown/3245829?fr=aladdin">Markdown百科</a>  </p>
 <p><a href="https://docs.github.com/cn/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax">GitHub官方MarkDown语法链接</a>  </p>
 <p><a href="https://github.github.com/gfm/">GFM</a>  </p>
@@ -44,6 +60,11 @@
         <tag>Markdown</tag>
         <tag>语法</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Hello Hexo</title>
+    <url>/2020/11/07/Hello-Hexo/</url>
+    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
