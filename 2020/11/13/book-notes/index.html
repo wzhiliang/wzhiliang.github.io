@@ -20,17 +20,22 @@
     var CONFIG = {"hostname":"wzhiliang.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="不卑不亢不慌不忙，去寻找我想要的自由">
-<meta property="og:type" content="website">
-<meta property="og:title" content="汪志良の博客">
-<meta property="og:url" content="https://wzhiliang.github.io/archives/index.html">
+  <meta name="description" content="第1章  加载和运行 管理浏览器中的JavaScript代码是个棘手的问题，因为代码执行过程会阻塞浏览器的其他进程，比如用户界面绘制。每次遇到 &lt; script &gt;标签，页面都必须停下来等待代码下载（如果是外链文件）并执行，然后继续处理其他部分。尽管如此，还是有几种方法能减少JavaScript对性能的影响：   &lt;&#x2F; body&gt;闭合标签之前，将所有的&lt; script">
+<meta property="og:type" content="article">
+<meta property="og:title" content="读书笔记之《高性能JavaScript》">
+<meta property="og:url" content="https://wzhiliang.github.io/2020/11/13/book-notes/index.html">
 <meta property="og:site_name" content="汪志良の博客">
-<meta property="og:description" content="不卑不亢不慌不忙，去寻找我想要的自由">
+<meta property="og:description" content="第1章  加载和运行 管理浏览器中的JavaScript代码是个棘手的问题，因为代码执行过程会阻塞浏览器的其他进程，比如用户界面绘制。每次遇到 &lt; script &gt;标签，页面都必须停下来等待代码下载（如果是外链文件）并执行，然后继续处理其他部分。尽管如此，还是有几种方法能减少JavaScript对性能的影响：   &lt;&#x2F; body&gt;闭合标签之前，将所有的&lt; script">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-11-13T14:17:34.000Z">
+<meta property="article:modified_time" content="2020-11-13T14:32:11.288Z">
 <meta property="article:author" content="汪志良">
+<meta property="article:tag" content="读书">
+<meta property="article:tag" content="笔记">
+<meta property="article:tag" content="摘录">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://wzhiliang.github.io/archives/">
+<link rel="canonical" href="https://wzhiliang.github.io/2020/11/13/book-notes/">
 
 
 <script id="page-configurations">
@@ -38,12 +43,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 汪志良の博客</title>
+  <title>读书笔记之《高性能JavaScript》 | 汪志良の博客</title>
   
 
 
@@ -188,130 +193,151 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 5 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wzhiliang.github.io/2020/11/13/book-notes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/my-pictrue.jpg">
+      <meta itemprop="name" content="汪志良">
+      <meta itemprop="description" content="不卑不亢不慌不忙，去寻找我想要的自由">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="汪志良の博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          读书笔记之《高性能JavaScript》
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-11-13 22:17:34 / 修改时间：22:32:11" itemprop="dateCreated datePublished" datetime="2020-11-13T22:17:34+08:00">2020-11-13</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AF%BB%E4%B9%A6/" itemprop="url" rel="index"><span itemprop="name">读书</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span><br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>515</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-11-13T22:17:34+08:00"
-              content="2020-11-13">
-          11-13
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/11/13/book-notes/" itemprop="url">
-            <span itemprop="name">读书笔记之《高性能JavaScript》</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-11-09T21:11:43+08:00"
-              content="2020-11-09">
-          11-09
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/11/09/github-markdown/" itemprop="url">
-            <span itemprop="name">基于Github的Markdown语法简明汇总</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-11-08T23:14:04+08:00"
-              content="2020-11-08">
-          11-08
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/11/08/hexo/" itemprop="url">
-            <span itemprop="name">如何使用hexo+next搭建github个人博客</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-11-07T22:22:11+08:00"
-              content="2020-11-07">
-          11-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/11/07/Hello-Hexo/" itemprop="url">
-            <span itemprop="name">Hello Hexo</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-11-07T22:19:19+08:00"
-              content="2020-11-07">
-          11-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/11/07/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <h2 id="第1章-加载和运行"><a href="#第1章-加载和运行" class="headerlink" title="第1章  加载和运行"></a>第1章  加载和运行</h2><blockquote>
+<p>管理浏览器中的JavaScript代码是个棘手的问题，因为代码执行过程会阻塞浏览器的其他进程，比如用户界面绘制。每次遇到 &lt; script &gt;标签，页面都必须停下来等待代码下载（如果是外链文件）并执行，然后继续处理其他部分。尽管如此，还是有几种方法能减少JavaScript对性能的影响：</p>
+</blockquote>
+<ul>
+<li>&lt;/ body&gt;闭合标签之前，将所有的&lt; script&gt;标签放到页面底部。这能确保在脚本执行前页面已经完成渲染。</li>
+<li>合并脚本。页面中的&lt; script&gt;标签越少，加载也就越快，响应也更迅速。无论外链文件还是内嵌脚本都是如此。</li>
+<li>有多种无阻塞下载JavaScript的办法：<ul>
+<li>使用&lt; script&gt;标签的defer属性；</li>
+<li>使用动态创建&lt; script&gt;元素来下载并执行代码；</li>
+<li>使用XHR对象下载JavaScript代码并注入页面中；</li>
+</ul>
+</li>
+</ul>
+<p>通过以上策略，可以极大提高那些需要使用大量JavaScript的Web应用的实际性能。</p>
+<h3 id="延伸"><a href="#延伸" class="headerlink" title="延伸"></a>延伸</h3><p>推荐书籍：<br>《高性能网站建设》<br>《高性能网站建设进阶指南》  </p>
+<p>推荐代码仓：<br>YUI3、LazyLoad、LABjs  </p>
+<blockquote>
+<p>这些代码仓可以学习下思想，分析下优劣，实际项目中不一定要使用</p>
+</blockquote>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+    <div>
+      
+        <div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+      
+    </div>
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>汪志良
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wzhiliang.github.io/2020/11/13/book-notes/" title="读书笔记之《高性能JavaScript》">https://wzhiliang.github.io/2020/11/13/book-notes/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E8%AF%BB%E4%B9%A6/" rel="tag"># 读书</a>
+              <a href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag"># 笔记</a>
+              <a href="/tags/%E6%91%98%E5%BD%95/" rel="tag"># 摘录</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/11/09/github-markdown/" rel="prev" title="基于Github的Markdown语法简明汇总">
+      <i class="fa fa-chevron-left"></i> 基于Github的Markdown语法简明汇总
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -364,6 +390,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%AC%AC1%E7%AB%A0-%E5%8A%A0%E8%BD%BD%E5%92%8C%E8%BF%90%E8%A1%8C"><span class="nav-number">1.</span> <span class="nav-text">第1章  加载和运行</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BB%B6%E4%BC%B8"><span class="nav-number">1.1.</span> <span class="nav-text">延伸</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 

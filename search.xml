@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello Hexo</title>
+    <url>/2020/11/07/Hello-Hexo/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>读书笔记之《高性能JavaScript》</title>
+    <url>/2020/11/13/book-notes/</url>
+    <content><![CDATA[<h2 id="第1章-加载和运行"><a href="#第1章-加载和运行" class="headerlink" title="第1章  加载和运行"></a>第1章  加载和运行</h2><blockquote>
+<p>管理浏览器中的JavaScript代码是个棘手的问题，因为代码执行过程会阻塞浏览器的其他进程，比如用户界面绘制。每次遇到 &lt; script &gt;标签，页面都必须停下来等待代码下载（如果是外链文件）并执行，然后继续处理其他部分。尽管如此，还是有几种方法能减少JavaScript对性能的影响：</p>
+</blockquote>
+<ul>
+<li>&lt;/ body&gt;闭合标签之前，将所有的&lt; script&gt;标签放到页面底部。这能确保在脚本执行前页面已经完成渲染。</li>
+<li>合并脚本。页面中的&lt; script&gt;标签越少，加载也就越快，响应也更迅速。无论外链文件还是内嵌脚本都是如此。</li>
+<li>有多种无阻塞下载JavaScript的办法：<ul>
+<li>使用&lt; script&gt;标签的defer属性；</li>
+<li>使用动态创建&lt; script&gt;元素来下载并执行代码；</li>
+<li>使用XHR对象下载JavaScript代码并注入页面中；</li>
+</ul>
+</li>
+</ul>
+<p>通过以上策略，可以极大提高那些需要使用大量JavaScript的Web应用的实际性能。</p>
+<h3 id="延伸"><a href="#延伸" class="headerlink" title="延伸"></a>延伸</h3><p>推荐书籍：<br>《高性能网站建设》<br>《高性能网站建设进阶指南》  </p>
+<p>推荐代码仓：<br>YUI3、LazyLoad、LABjs  </p>
+<blockquote>
+<p>这些代码仓可以学习下思想，分析下优劣，实际项目中不一定要使用</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>读书</category>
+      </categories>
+      <tags>
+        <tag>读书</tag>
+        <tag>笔记</tag>
+        <tag>摘录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>基于Github的Markdown语法简明汇总</title>
     <url>/2020/11/09/github-markdown/</url>
     <content><![CDATA[<h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><h3 id="1-1-研究目的"><a href="#1-1-研究目的" class="headerlink" title="1.1 研究目的"></a>1.1 研究目的</h3><p>充分利用Markdown的特性创作出结构清晰、逻辑性强的技术博文，一来可以作为个人笔记以便不时之需，二来可以加强对Markdown的深入理解。</p>
@@ -60,11 +97,6 @@
         <tag>Markdown</tag>
         <tag>语法</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello Hexo</title>
-    <url>/2020/11/07/Hello-Hexo/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
