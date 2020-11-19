@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>读书笔记之《高性能JavaScript》</title>
+    <title>Hello Hexo</title>
+    <url>/2020/11/07/Hello-Hexo/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>高性能JavaScript</title>
     <url>/2020/11/13/book-notes/</url>
     <content><![CDATA[<h2 id="第1章-加载和运行"><a href="#第1章-加载和运行" class="headerlink" title="第1章  加载和运行"></a>第1章  加载和运行</h2><blockquote>
 <p>管理浏览器中的JavaScript代码是个棘手的问题，因为代码执行过程会阻塞浏览器的其他进程，比如用户界面绘制。每次遇到 &lt; script &gt;标签，页面都必须停下来等待代码下载（如果是外链文件）并执行，然后继续处理其他部分。尽管如此，还是有几种方法能减少JavaScript对性能的影响：</p>
@@ -139,11 +144,6 @@
         <tag>笔记</tag>
         <tag>摘录</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>Hello Hexo</title>
-    <url>/2020/11/07/Hello-Hexo/</url>
-    <content><![CDATA[]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
