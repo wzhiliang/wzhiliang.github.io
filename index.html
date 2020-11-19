@@ -217,10 +217,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-11-13 22:17:34 / 修改时间：23:45:28" itemprop="dateCreated datePublished" datetime="2020-11-13T22:17:34+08:00">2020-11-13</time>
+              <time title="创建时间：2020-11-13 22:17:34" itemprop="dateCreated datePublished" datetime="2020-11-13T22:17:34+08:00">2020-11-13</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-11-19 22:36:46" itemprop="dateModified" datetime="2020-11-19T22:36:46+08:00">2020-11-19</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -237,7 +243,7 @@
                 <i class="far fa-file-word"></i>
               </span>
                 <span class="post-meta-item-text">本文字数：</span>
-              <span>1.3k</span>
+              <span>4.4k</span>
             </span>
 
         </div>
@@ -294,6 +300,88 @@
 <li>动画中使用绝对定位，使用拖放代理。</li>
 <li>使用事件委托来减少事件处理器的数量。</li>
 </ul>
+<h2 id="第4章-算法和流程控制"><a href="#第4章-算法和流程控制" class="headerlink" title="第4章  算法和流程控制"></a>第4章  算法和流程控制</h2><blockquote>
+<p>JavaScript和其他编程语言一样，代码的写法和算法会影响运行时间。与其他语言不同的是JavaScript可用资源有限，因此优化技术更为重要。</p>
+</blockquote>
+<ul>
+<li>for、while和do-while循环性能特性相当，并没有一种循环明显快于或慢于其他类型。</li>
+<li>避免使用for-in循环，除非你需要遍历一个属性数量未知的对象。</li>
+<li>改善循环性能的最佳方式是减少每次迭代的运算量和减少循环迭代次数。</li>
+<li>通常来说，switch总是比if-else快，但并不总是最佳解决方案。</li>
+<li>在判断条件较多时，使用查找表比if-else和switch更快。</li>
+<li>浏览器的调用栈大小限制了递归算法在JavaScript中的应用；栈溢出错误会导致其他代码中断运行。</li>
+<li>如果你遇到栈溢出错误，可将方法改为迭代算法，或使用Memoization来避免重复计算。  </li>
+</ul>
+<p>运行的代码熟练越大，使用这些策略所带来的性能提升也就越明显。</p>
+<h2 id="第5章-字符串和正则表达式"><a href="#第5章-字符串和正则表达式" class="headerlink" title="第5章  字符串和正则表达式"></a>第5章  字符串和正则表达式</h2><blockquote>
+<p>密集的字符串操作和草率地编写正则表达式可能产生严重的性能障碍，本章提供的建议会帮助你避免这些常见的陷阱。</p>
+</blockquote>
+<ul>
+<li>当连接数量巨大或者尺寸巨大的字符串时，数组项合并是唯一在IE 7及更早版本中性能合理的方法。</li>
+<li>如果不需要考虑IE 7及更早版本的性能，数组项合并是最慢的字符串连接方法之一。推荐使用简单的+和+=操作符替代，避免不必要的中间字符串。</li>
+<li>回溯既是正则表达式匹配功能的基本组成部分，也是正则表达式的低效之源。</li>
+<li>回溯失控发生在正则表达式本应快速匹配的地方，但因为某些特殊的字符串匹配动作导致运行缓慢甚至浏览器崩溃。避免这个问题的办法是：使相邻的字元互斥，避免嵌套量词对同一字符串的相同部分多次匹配，通过重复利用预查的原子组去除不必要的回溯。</li>
+<li>提高正则表达式效率的各种技术手段会有助于正则表达式更快地匹配，并在非匹配位置上花更少时间。</li>
+<li>正则表达式并不总是完成工作的最佳工具，尤其当你只搜索字面字符串的时候。</li>
+<li>尽管有许多方法可以去除字符串的首尾空白，但使用两个简单的正则表达式（一个用来去除头部空白，另一个用来去除尾部空白）来处理大量字符串内容能提供一个简洁而跨浏览器的方法。从字符串末尾开始循环向前搜索第一个非空字符，或者将此技术同正则表达式结合起来，会提供一个更好的替代方案，它很少受到字符串长度影响。</li>
+</ul>
+<h2 id="第6章-快速响应的用户界面"><a href="#第6章-快速响应的用户界面" class="headerlink" title="第6章  快速响应的用户界面"></a>第6章  快速响应的用户界面</h2><blockquote>
+<p>JavaScript和用户界面更新在同一个进程中运行，因此一次只能处理一件事情。这意味着当JavaScript代码正在运行时，用户界面不能响应输入，反之亦然。高效地管理UI线程就是要确保JavaScript不能运行太长时间，以免影响用户体验。最后，请牢记以下几点：</p>
+</blockquote>
+<ul>
+<li>任何JavaScript任务都不应当执行超过100毫秒。过长的运行时间会导致UI更新出现明显的延迟，从而对用户体验产生负面影响。</li>
+<li>JavaScript运行期间，浏览器响应用户交互的行为存在差异。无论如何，JavaScript长时间运行将导致用户体验变得混乱和脱节。</li>
+<li>定时器可用来安排代码延迟执行，它使得你可以把长时间运行脚本分解成一系列的小任务。</li>
+<li>Web Workers是新版浏览器支持的特性，它允许你在UI线程外部执行JavaScript代码，从而避免锁定UI。</li>
+</ul>
+<p>Web应用越复杂，积极主动地管理UI线程就越重要。即使JavaScript代码再重要，也不应该影响用户体验。</p>
+<h2 id="第7章-Ajax"><a href="#第7章-Ajax" class="headerlink" title="第7章 Ajax"></a>第7章 Ajax</h2><blockquote>
+<p>高性能的Ajax包括以下方面：了解你项目的具体需求，选择正确的数据格式和与之匹配的传输技术。</p>
+</blockquote>
+<blockquote>
+<p>作为数据格式，纯文本和HTML只适合特定场合，但它们可以节省客户端的CPU周期。XML被广泛应用而且支持良好，但是它十分笨重且解析缓慢。JSON是轻量级的，解析速度快（被视为原生代码而不是字符串），通用性与XML相当。字符分隔的自定义格式十分轻量，在解析大量数据集时非常快，但需要编写额外的服务端构造程序，并在客户端解析。</p>
+</blockquote>
+<blockquote>
+<p>当从页面当前所处的域下请求数据时，XHR提供了最完善的控制和灵活性，尽管它会把接收到的所有数据当成一个字符串，且这有可能降低解析速度。另一方面，动态脚本注入允许跨域请求和本地执行JavaScript和JSON但是它的接口不那么安全，而且还不能读取头信息或响应代码。Muiltipart XHR可以用来减少请求数，并处理一个响应中的各种文件类型，但是它不能缓存接收的响应。当需要发送数据时，图片信标是一种简单而有效的方法。XHR还可以用POST方法发送大量数据。</p>
+</blockquote>
+<p>除了这些格式和传输技术，还有一些准则有助于加速你的Ajax：</p>
+<ul>
+<li>减少请求数，可通过合并JavaScript和CSS文件，或使用MXHR。</li>
+<li>缩短页面的加载时间，页面主要内容加载完成后，用Ajax获取那些次要的文件。</li>
+<li>确保你的代码错误不会输出给用户，并在服务端处理错误。</li>
+<li>知道何时使用成熟的Ajax类库，以及何时编写自己的底层Ajax代码。</li>
+</ul>
+<h2 id="第8章-编程实践"><a href="#第8章-编程实践" class="headerlink" title="第8章  编程实践"></a>第8章  编程实践</h2><blockquote>
+<p>JavaScript提出了一些独一无二的性能挑战，这与你组织代码的方式有关。随着Web应用变得越来越高级，包含的JavaScript代码也越来越多，各种模式和反模式也逐渐出现。为了编写更高效的代码，请牢记以下编程实践：</p>
+</blockquote>
+<ul>
+<li>通过避免使用eval()和Function()构造器来避免双重求值带来的性能消耗。同样的，给setTimeout()和setInterval()传递函数而不是字符串作为参数。</li>
+<li>尽量使用直接量创建对象和数组。直接量的创建和初始化都比非直接量形式要快。</li>
+<li>避免做重复的工作。当需要检测浏览器时，可使用延迟加载或条件预加载。</li>
+<li>在进行数学计算时，考虑使用直接操作数字的二进制形式的位运算。</li>
+<li>JavaScript的原生方法总会比你写的任何代码都要快。尽量使用原生方法。</li>
+</ul>
+<h2 id="第9章-构建并部署高性能JavaScript应用"><a href="#第9章-构建并部署高性能JavaScript应用" class="headerlink" title="第9章  构建并部署高性能JavaScript应用"></a>第9章  构建并部署高性能JavaScript应用</h2><blockquote>
+<p>构建和部署的过程对基于JavaScript的Web应用的性能有着巨大影响。这个过程最重要的步骤有：</p>
+</blockquote>
+<ul>
+<li>合并JavaScript文件以减少HTTP请求数。</li>
+<li>使用YUI Compressor压缩JavaScript文件。</li>
+<li>在服务器压缩JavaScript文件（Gzip编码）。</li>
+<li>通过正确设置HTTP响应头来缓存JavaScript文件，通过向文件名增加时间戳来避免缓存问题。</li>
+<li>使用CDN（Content Delivery Network）提供JavaScript文件；CDN不仅可以提升性能，它也为你管理文件的压缩与缓存。</li>
+</ul>
+<p>所有这些步骤都应该自动化处理，可以使用公开的工具，比如Apache Ant，也可以使用定制的工具来满足你的特定需求。如果你使得构建过程工作起来，你将会显著提高那些依赖大量JAvaScript的Web应用或网站的性能。</p>
+<h2 id="第10章-工具"><a href="#第10章-工具" class="headerlink" title="第10章  工具"></a>第10章  工具</h2><blockquote>
+<p>当网页或Web应用变慢时，分析从网络下载的资源以及分析脚本的运行性能能让你专注于那些最需要优化的地方。</p>
+</blockquote>
+<ul>
+<li>使用网络分析工具找出加载脚本和页面中其他资源的瓶颈，这会帮助你决定哪些脚本需要延迟加载，或者需要进一步分析。</li>
+<li>尽管传统的经验告诉我们要尽量减少HTTP请求数，但把脚本尽可能延迟加载可以加快页面的渲染速度，给用户带来更好的体验。</li>
+<li>使用性能分析工具找出脚本运行过程中速度慢的地方，检查每个函数所消耗的时间，以及函数被调用的次数，通过调用栈自身提供的一些线索来找出需要集中精力优化的地方。</li>
+<li>尽管耗费的时间和调用次数通常是数据中最有价值的地方，但仔细观察函数的调用过程，你也许会发现其他优化目标。</li>
+</ul>
+<p>这些工具会帮助你深入了解你的代码在那些通常你比较陌生的编程环境下是如何运行的。在开始优化工作之前使用它们，以确保开发时间用在刀刃上。</p>
 
       
     </div>
@@ -801,7 +889,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-area"></i>
     </span>
-    <span title="站点总字数">3k</span>
+    <span title="站点总字数">6k</span>
 </div>
 
         
