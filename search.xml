@@ -141,24 +141,6 @@
       </tags>
   </entry>
   <entry>
-    <title>用hexo+next搭建github个人博客</title>
-    <url>/2020/11/08/hexo/</url>
-    <content><![CDATA[<h3 id="搭建github个人博客"><a href="#搭建github个人博客" class="headerlink" title="搭建github个人博客"></a>搭建github个人博客</h3><blockquote>
-<p>由于我已经注册过github账号，这步就略过了，<a href="https://github.com/">github传送门</a></p>
-</blockquote>
-<h2 id="1-创建博客仓库"><a href="#1-创建博客仓库" class="headerlink" title="1. 创建博客仓库"></a>1. 创建博客仓库</h2><p><img src="../../../images/blog/image-20201121225808694.png" alt="创建仓库"></p>
-<p><img src="../../../images/blog/image-20201121230117474.png" alt="image-20201121230117474"></p>
-]]></content>
-      <categories>
-        <category>开源 建站</category>
-      </categories>
-      <tags>
-        <tag>hexo</tag>
-        <tag>个人博客</tag>
-        <tag>github</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于Github的Markdown语法简明汇总</title>
     <url>/2020/11/09/github-markdown/</url>
     <content><![CDATA[<h2 id="一、背景"><a href="#一、背景" class="headerlink" title="一、背景"></a>一、背景</h2><h3 id="1-1-研究目的"><a href="#1-1-研究目的" class="headerlink" title="1.1 研究目的"></a>1.1 研究目的</h3><p>充分利用Markdown的特性创作出结构清晰、逻辑性强的技术博文，一来可以作为个人笔记以便不时之需，二来可以加强对Markdown的深入理解。</p>
@@ -308,6 +290,24 @@
         <tag>Github</tag>
         <tag>Markdown</tag>
         <tag>语法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>用hexo+next搭建github个人博客</title>
+    <url>/2020/11/08/hexo/</url>
+    <content><![CDATA[<h3 id="搭建github个人博客"><a href="#搭建github个人博客" class="headerlink" title="搭建github个人博客"></a>搭建github个人博客</h3><blockquote>
+<p>由于我已经注册过github账号，这步就略过了，<a href="https://github.com/">github传送门</a></p>
+</blockquote>
+<h2 id="1-创建博客仓库"><a href="#1-创建博客仓库" class="headerlink" title="1. 创建博客仓库"></a>1. 创建博客仓库</h2><p><img src="../../../../images/blog/image-20201121225808694.png" alt="创建仓库"></p>
+<p><img src="../../../../images/blog/image-20201121230117474.png" alt="image-20201121230117474"></p>
+]]></content>
+      <categories>
+        <category>开源 建站</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+        <tag>个人博客</tag>
+        <tag>github</tag>
       </tags>
   </entry>
 </search>
