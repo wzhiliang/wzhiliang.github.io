@@ -299,9 +299,14 @@
 <p>由于我已经注册过github账号，这步就略过了，<a href="https://github.com/">github传送门</a></p>
 </blockquote>
 <h2 id="1-创建博客仓库"><a href="#1-创建博客仓库" class="headerlink" title="1. 创建博客仓库"></a>1. 创建博客仓库</h2><h3 id="1-1-登录github，点击右上角的加号，选择New-repository。"><a href="#1-1-登录github，点击右上角的加号，选择New-repository。" class="headerlink" title="1.1 登录github，点击右上角的加号，选择New repository。"></a>1.1 登录github，点击右上角的<em>加号</em>，选择<code>New repository</code>。</h3><p><img src="https://wzhiliang.github.io/images/blog/image-20201121225808694.png" alt="创建仓库"></p>
-<h3 id="1-2-填写新建仓库的信息，Repository-name建议以用户名-github-io命名-其他的信息随意。"><a href="#1-2-填写新建仓库的信息，Repository-name建议以用户名-github-io命名-其他的信息随意。" class="headerlink" title="1.2 填写新建仓库的信息，Repository name建议以用户名+github.io命名,其他的信息随意。"></a>1.2 填写新建仓库的信息，Repository name建议以<code>用户名+github.io命名</code>,其他的信息随意。</h3><p><img src="https://wzhiliang.github.io/images/blog/image-20201121230117474.png" alt="填写信息"></p>
-<h3 id="1-3-仓库信息填写完成，点击Create-repository按钮即可完成github个人博客仓库的创建。"><a href="#1-3-仓库信息填写完成，点击Create-repository按钮即可完成github个人博客仓库的创建。" class="headerlink" title="1.3 仓库信息填写完成，点击Create repository按钮即可完成github个人博客仓库的创建。"></a>1.3 仓库信息填写完成，点击Create repository按钮即可完成github个人博客仓库的创建。</h3><h3 id="1-4-个人博客仓库设置"><a href="#1-4-个人博客仓库设置" class="headerlink" title="1.4 个人博客仓库设置"></a>1.4 个人博客仓库设置</h3><p><img src="https://wzhiliang.github.io/images/blog/image-20201122225331757.png" alt="image-20201122225331757"></p>
-<p><img src="https://wzhiliang.github.io/images/blog/image-20201122225459004.png" alt="image-20201122225459004"></p>
+<h3 id="1-2-填写仓库的信息，Repository-name建议以用户名-github-io命名，其他的信息随意。"><a href="#1-2-填写仓库的信息，Repository-name建议以用户名-github-io命名，其他的信息随意。" class="headerlink" title="1.2 填写仓库的信息，Repository name建议以用户名+github.io命名，其他的信息随意。"></a>1.2 填写仓库的信息，Repository name建议以<code>用户名+github.io命名</code>，其他的信息随意。</h3><p><img src="https://wzhiliang.github.io/images/blog/image-20201121230117474.png" alt="填写信息"></p>
+<h3 id="1-3-仓库信息填写完成，点击Create-repository按钮即可完成github个人博客仓库的创建。"><a href="#1-3-仓库信息填写完成，点击Create-repository按钮即可完成github个人博客仓库的创建。" class="headerlink" title="1.3 仓库信息填写完成，点击Create repository按钮即可完成github个人博客仓库的创建。"></a>1.3 仓库信息填写完成，点击Create repository按钮即可完成github个人博客仓库的创建。</h3><h3 id="1-4-个人博客仓库设置"><a href="#1-4-个人博客仓库设置" class="headerlink" title="1.4 个人博客仓库设置"></a>1.4 个人博客仓库设置</h3><p>settings配置页在最后一个tab页签</p>
+<p><img src="https://wzhiliang.github.io/images/blog/image-20201122225331757.png" alt="image-20201122225331757"></p>
+<p>将滚动条拖到<code>GitHub Pages</code>设置块，可设置项有<code>Source</code>、<code>Theme Chooser</code>、<code>Custom domain</code>、<code>Enforce HTTPS</code></p>
+<p><img src="https://wzhiliang.github.io/images/blog/image-20201122230954257.png" alt="image-20201122230954257"></p>
+<p><img src="https://wzhiliang.github.io/images/blog/image-20201122231941689.png" alt="image-20201122231941689"></p>
+<p><img src="https://wzhiliang.github.io/images/blog/image-20201122232139859.png" alt="image-20201122232139859"></p>
+<p><img src="https://wzhiliang.github.io/images/blog/image-20201122232356823.png" alt="image-20201122232356823"></p>
 <h2 id="2-hexo"><a href="#2-hexo" class="headerlink" title="2. hexo"></a>2. hexo</h2>]]></content>
       <categories>
         <category>开源 建站</category>
